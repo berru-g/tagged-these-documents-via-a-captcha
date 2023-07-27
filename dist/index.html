@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - tagged these documents via a captcha</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Inclure la bibliothèque Google Sheets API -->
+<script src="https://apis.google.com/js/api.js"></script>
+
+  <title>tagged-documents-captcha</title>
+</head>
+<body>
+  <h1>DocTaggerClassify</h1>
+  <h2>Basé sur le concept du <a href="https://www.lemonde.fr/pixels/article/2016/02/10/petite-histoire-des-captchas-ces-tests-d-identification-en-pleine-mutation_4862727_4408996.html" >Captcha</a> et sa double utilité.</h2>
+  <h3>Pour les fainéants qui veulent classifier leurs documents par d'autres.*</h3>
+  <h5>*Insérer le captcha sur votre site, envoyer le résultat dans votre drive.</h5> 
+  <div class="captcha">
+  <div id="options">
+    <p>Sélectionnez le type de document :</p>
+    <select id="document-type">
+      <option value="facture">Facture</option>
+      <option value="admin">Administratif</option>
+      <option value="juridique">Juridique</option>
+      <option value="logistique">Logistique</option>
+    </select>
+    <button onclick="saveResult()">Valider</button>
+  </div>
+
+  <!-- Assurez-vous que l'élément avec l'ID "results" existe dans le fichier HTML -->
+  <div id="results">
+    <!-- Les résultats seront affichés ici -->
+  </div>
+  <div id="captcha-container">
+    <!-- Le CAPTCHA sera généré ici -->
+  </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

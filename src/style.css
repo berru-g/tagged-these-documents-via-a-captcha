@@ -1,0 +1,20 @@
+body {
+  padding: 10px 10px;
+}
+h1, h2 {
+  font-family: Sans-serif;
+}
+h3, h5 {
+  color:grey;
+}
+a {
+  text-decoration: none;
+}
+.captcha {
+  border: solid 2px grey;
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+#results {
+  color: red;
+}
